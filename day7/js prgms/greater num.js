@@ -6,4 +6,5 @@ for (i = 0; i < arr.length; i++) {
     if (arr[i] == search) {
         a = i
     }
-    console.log("The index is", a);
+}
+console.log("The index is", a)
