@@ -26,10 +26,12 @@
     
     .nav2 {
         width: 30%;
+        background-color: black;
     }
     
     .nav2 ul {
         display: flex;
         justify-content: space-evenly;
         color: white;
+        padding: 27px;
     }
