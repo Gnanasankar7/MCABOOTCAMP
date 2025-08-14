@@ -5,20 +5,27 @@ const arr = ["./assets/spartans1.jpg",
     "./assets/spider.jpg"
 ]
 
-let i = 1;
+let i = 0;
+
 let changeimg = () => {
+    i++;
     if (i == 4) {
         i = 0;
     }
     con.style.backgroundImage = `url('${arr[i]}')`;
-    i++
 }
-let j = 3;
+
 let changeimg2 = () => {
-    if (j == -1) {
-        j = 3;
+    i--
+    if (i == -1) {
+        i = 3;
 
     }
-    con.style.backgroundImage = `url('${arr[j]}')`;
-    j--
+    con.style.backgroundImage = `url('${arr[i]}')`;
 }
+
+let change = (a) => {
+    con.style.backgroundImage = `url('${arr[a]}')`;
+}
+
+setInterval(changeimg, 2000);
